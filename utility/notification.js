@@ -41,7 +41,7 @@ class Notification {
     }
     static async backgroundLayerIsMissing() {
         const r1 = await dialog_box.prompt(
-            'You need a white background layer present in your document',
+            '您需要在文档中显示一个白色背景层',
             '',
             ['Cancel', 'Create']
         )
@@ -72,20 +72,20 @@ class Notification {
         return false
     }
     static async inactiveSelectionArea(is_active_session) {
-        let buttons = ['Cancel', 'Rectangular Marquee']
+        let buttons = ['取消', '矩形选框工具']
         if (is_active_session) {
             buttons.push('Continue Session')
         }
         const r1 = await dialog_box.prompt(
-            'Please Select a Rectangular Area',
-            'You Forgot to select a Rectangular Area',
+            '请选择一个矩形区域',
+            '您忘记选择矩形区域了',
             buttons
         )
-        if (r1 === 'Cancel') {
+        if (r1 === '取消') {
             /* cancelled or No */
             console.log('cancel')
             return false
-        } else if (r1 === 'Rectangular Marquee') {
+        } else if (r1 === '矩形选框工具') {
             console.log('Rectangular Marquee')
             psapi.selectMarqueeRectangularToolExe()
             return false // should this be false?! what does true and false means in this context?! Yes: it should be false since boolean value represent wither we have an active selection area or not
