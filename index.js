@@ -719,11 +719,11 @@ let g_request_status = '' //
 
 //REFACTOR: move to Enum.js
 const generationMode = {
-    Txt2Img: 'txt2img',
-    Img2Img: 'img2img',
-    Inpaint: 'inpaint',
-    Outpaint: 'outpaint',
-    Upscale: 'upscale',
+    文生图: 'txt2img',
+    图生图: 'img2img',
+    修复: 'inpaint',
+    填充: 'outpaint',
+    图像放大: 'upscale',
 }
 const backendTypeEnum = {
     Auto1111: 'auto1111',
@@ -3603,10 +3603,10 @@ document.getElementById('collapsible').addEventListener('click', function () {
     console.log('content:', content)
     if (content.style.display === 'block') {
         content.style.display = 'none'
-        this.textContent = 'Show Samplers'
+        this.textContent = '显示采样方法'
     } else {
         content.style.display = 'block'
-        this.textContent = 'Hide Samplers'
+        this.textContent = '隐藏采样方法'
     }
 })
 

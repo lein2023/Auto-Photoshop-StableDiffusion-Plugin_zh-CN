@@ -463,7 +463,7 @@
 
         #slInpaintingMaskWeight {
             width: 100%;
-            /* margin-left: 10px; */
+            margin-left: 10px;
         }
 
         .disabled-btn {
@@ -692,10 +692,10 @@
                     id="sp-stable-diffusion-ui-tab"
                     title="Stable Diffusion UI"
                 >
-                    <sp-label>Stable Diffusion</sp-label>
+                    <sp-label>稳定扩散</sp-label>
                 </div>
                 <div class="sp-tab" id="sp-viewer-tab">
-                    <sp-label>Viewer</sp-label>
+                    <sp-label>查看</sp-label>
                 </div>
                 <div class="sp-tab" id="sp-control_net-tab">
                     <sp-label>ControlNet</sp-label>
@@ -725,26 +725,26 @@
                     <sp-label>Horde</sp-label>
                 </div>
                 <div class="sp-tab" id="sp-extras-tab">
-                    <sp-label>Extras</sp-label>
+                    <sp-label>扩展</sp-label>
                 </div>
                 <div class="sp-tab" id="sp-presets-tab" style="display: none">
                     <sp-label>Presets</sp-label>
                 </div>
                 <div class="sp-tab" id="sp-settings-tab">
-                    <sp-label>Settings</sp-label>
+                    <sp-label>设置</sp-label>
                 </div>
                 <div>
                     <span
                         class="disconnected"
                         id="automaticStatus"
                         title="'A' for Automatic1111 server (webui-user.bat), Green is connected. Red Means there is a problem with your Automatic1111. Run 'webui-user.bat' and hit 'Refresh' button "
-                        >A</span
+                        >fox：汉化版</span
                     >
                     <span
                         class="disconnected"
                         id="proxyServerStatus"
                         title="'P' for proxy server (start_server.bat), Green is connected. Red means you need to run 'start_server.bat' or hit Refresh button"
-                        >P</span
+                        >2228232003</span
                     >
                 </div>
                 <sp-label slot="label" id="lVersionNumber">v0.0.0</sp-label>
@@ -799,7 +799,7 @@
                             checked
                             value="viewer"
                             data-tab-name="sp-viewer-tab"
-                            >Viewer</sp-radio
+                            >viewer</sp-radio
                         >
                         <sp-radio
                             title=""
@@ -838,16 +838,16 @@
                 <div id="viewerSubTab">
                     <div class="flexContainer">
                         <sp-label slot="label"
-                            >View your generated images on the canvas</sp-label
+                            >查看画布上生成的图像</sp-label
                         >
                     </div>
                     <div></div>
                     <div>
                         <button class="btnSquare" id="btnSetMaskViewer">
-                            Set Mask
+                            设置蒙版
                         </button>
                         <button class="btnSquare" id="btnSetInitImageViewer">
-                            Set Init Image
+                            设置初始图像
                         </button>
                         <button
                             class="btnSquare btnGenerateClass"
@@ -863,7 +863,7 @@
                             Interrupt
                         </button>
                         <button class="btnSquare" id="btnSelectionArea">
-                            Selection Area
+                            选择区域
                         </button>
                         <div
                             style="
@@ -913,7 +913,7 @@
                                 style="margin-left: 10px; width: 100px"
                             >
                                 <sp-label slot="label" class="lProgressLabel"
-                                    >Progress...</sp-label
+                                    >进度...</sp-label
                                 >
                             </sp-progressbar>
                             <input
@@ -935,13 +935,13 @@
                             value="5"
                             style="width: 100%"
                         >
-                            <sp-label slot="label">Thumbnail Size:</sp-label>
+                            <sp-label slot="label">缩略图尺寸:</sp-label>
                         </sp-slider>
                         <sp-checkbox
                             class="checkbox"
                             id="chSquareThumbnail"
                             style="margin-left: 20px"
-                            >Square 1:1</sp-checkbox
+                            >正方形 1:1</sp-checkbox
                         >
                     </div>
                     <div class="" id="divProgressImageViewerContainer">
@@ -1010,11 +1010,11 @@
                             class="column-item button-style btnSquare"
                             id="bSetAllControlImage"
                         >
-                            Set All CtrlNet Images
+                                   设置所有 CtrlNet 图像
                         </button>
                     </div>
                     <sp-checkbox id="chDisableControlNetTab"
-                        >Disable ControlNet Tab</sp-checkbox
+                        >禁用 ControlNet 选项</sp-checkbox
                     >
                 </div>
 
@@ -1025,7 +1025,7 @@
                 >
                     <div class="flexContainer">
                         <sp-label slot="label " class="controlnet_unit_label_"
-                            >Control Net Settings Slot 0</sp-label
+                            >Control Net settings Slot 0</sp-label
                         >
                     </div>
                     <div style="display: flex">
@@ -1049,7 +1049,7 @@
                                     class="column-item button-style btnSquare bSetControlImage_"
                                     id="bSetControlImage_0"
                                 >
-                                    Set CtrlNet Img
+                                    set CtrlNet Img
                                 </button>
                             </div>
                         </div>
@@ -1082,13 +1082,13 @@
                     <sp-checkbox
                         id="chEnableControlNet_0"
                         class="chEnableControlNet_"
-                        >Enable</sp-checkbox
+                        >开启</sp-checkbox
                     >
                     <sp-checkbox checked id="chlowVram_0" class="chlowVram_"
-                        >Low VRAM</sp-checkbox
+                        >低显存</sp-checkbox
                     >
                     <sp-checkbox id="chGuessMode_0" class="chGuessMode_"
-                        >Guess Mode</sp-checkbox
+                        >猜测模式</sp-checkbox
                     >
 
                     <div>
@@ -1102,7 +1102,7 @@
                                 value="50"
                                 title="2 will keep the composition; 0 will allow composition to change"
                             >
-                                <sp-label slot="label">Weight:</sp-label>
+                                <sp-label slot="label">控制权重:</sp-label>
                                 <sp-label
                                     slot="label"
                                     id="lControlNetWeight_0"
@@ -1119,7 +1119,7 @@
                                 value="0"
                             >
                                 <sp-label slot="label"
-                                    >Guidance strength start:</sp-label
+                                    >引导介入步数:</sp-label
                                 >
                                 <sp-label
                                     slot="label"
@@ -1137,7 +1137,7 @@
                                 value="100"
                             >
                                 <sp-label slot="label"
-                                    >Guidance strength end:</sp-label
+                                    >引导终止步数:</sp-label
                                 >
                                 <sp-label
                                     slot="label"
@@ -1150,7 +1150,6 @@
                                 show-value="true"
                                 id="slControlNetProcessorRes_0"
                                 class="slControlNetProcessorRes_"
-                                style="display: none"
                                 min="64"
                                 max="2048"
                                 value="512"
@@ -1158,7 +1157,7 @@
                                 <sp-label
                                     slot="label"
                                     class="labelControlNetProcessorRes_"
-                                    >Annotator resolution</sp-label
+                                    >Annotator 分辨率</sp-label
                                 >
                                 <!-- <sp-label
                                     slot="label"
@@ -1170,7 +1169,6 @@
                             <sp-slider
                                 show-value="false"
                                 class="slControlNetThreshold_A_"
-                                style="display: none"
                                 min="0"
                                 max="100"
                                 value="50"
@@ -1180,7 +1178,7 @@
                                 <sp-label
                                     slot="label"
                                     class="labelControlNetThreshold_A_"
-                                    >Threshold A:
+                                    >(Threshold) 阈值 A:
                                 </sp-label>
                                 <sp-label
                                     slot="label"
@@ -1191,7 +1189,6 @@
                             <sp-slider
                                 show-value="false"
                                 class="slControlNetThreshold_B_"
-                                style="display: none"
                                 min="0"
                                 max="100"
                                 value="50"
@@ -1201,7 +1198,7 @@
                                 <sp-label
                                     slot="label"
                                     class="labelControlNetThreshold_B_"
-                                    >Threshold B:
+                                    >(Threshold) 阈值 B:
                                 </sp-label>
                                 <sp-label
                                     slot="label"
@@ -1254,10 +1251,10 @@
 
                 <div class="flexContainer">
                     <sp-label slot="label"
-                        >history of all the images you generated</sp-label
+                        >生成图像的所有历史记录</sp-label
                     >
                     <div id="historySeedLabelContainer">
-                        <sp-label slot="label">Seed:</sp-label
+                        <sp-label slot="label">种子:</sp-label
                         ><sp-label slot="label" id="historySeedLabel"
                             >00000000000</sp-label
                         >
@@ -1266,10 +1263,10 @@
                 <div></div>
                 <div>
                     <button class="btnSquare" id="btnLoadHistory">
-                        Load Previous Generations
+                        加载先前的生成版本
                     </button>
                     <button class="btnSquare" id="btnClearHistoryCache">
-                        Clear Results
+                        清除结果
                     </button>
                 </div>
                 <div class="viewer-container" id="divHistoryImagesContainer">
@@ -1286,7 +1283,7 @@
                 <!-- <sp-textarea id="lexicaPrompt"> </sp-textarea> -->
                 <div class="flexContainer">
                     <sp-label slot="label"
-                        >Explore Lexica for prompts and inspiration</sp-label
+                        >浏览词库以获取提示和灵感</sp-label
                     >
                 </div>
                 <div></div>
@@ -1296,7 +1293,7 @@
                         type="text"
                         placeholder="cute cats"
                         value=""
-                        ><sp-label slot="label">Search:</sp-label></sp-textfield
+                        ><sp-label slot="label">搜索:</sp-label></sp-textfield
                     >
 
                     <button
@@ -1327,7 +1324,7 @@
                 <div class="subTabOptionsContainer"></div>
 
                 <div class="flexContainer">
-                    <sp-label slot="label">Image Search Engine</sp-label>
+                    <sp-label slot="label">图像搜索引擎</sp-label>
                 </div>
                 <div></div>
                 <div>
@@ -1336,11 +1333,11 @@
                         type="text"
                         placeholder="cute cats"
                         value=""
-                        ><sp-label slot="label">Search:</sp-label></sp-textfield
+                        ><sp-label slot="label">搜索:</sp-label></sp-textfield
                     >
 
                     <button class="btnSquare" id="btnImageSearch">
-                        Image Search
+                        图像搜索
                     </button>
                 </div>
                 <div
@@ -1358,30 +1355,29 @@
             <div class="sp-tab-page" id="sp-prompts-library-tab-page">
                 <div class="subTabOptionsContainer"></div>
                 <sp-label slot="label"
-                    >Prompt Shortcut: a single word that represent a
-                    prompt</sp-label
+                    >提示快捷方式: 代表提示的单个单词</sp-label
                 >
                 <div class="">
                     <sp-label slot="label"
-                        >Key for new prompt shortcut</sp-label
+                        >新建快捷提示词</sp-label
                     >
                     <sp-textarea
                         id="KeyPromptShortcut"
-                        placeholder="to be replaced"
+                        placeholder="被替换的内容"
                         value=""
                     ></sp-textarea>
                 </div>
                 <div class="">
                     <sp-label slot="label"
-                        >Value for new prompt shortcut</sp-label
+                        >翻译问题：这里的快捷方式可以理解为类似【快捷标签|便签】</sp-label
                     >
                     <sp-textarea
                         id="ValuePromptShortcut"
-                        placeholder="to be replaced with"
+                        placeholder="要替换的内容"
                         value=""
                     ></sp-textarea>
                     <button class="btnSquare" id="btnUpdatePromptShortcut">
-                        Add to Prompt Shortcut
+                        添加到提示快捷方式
                     </button>
                 </div>
                 <div class="">
@@ -1398,15 +1394,15 @@
                         </sp-menu>
                     </sp-picker>
                     <button class="btnSquare" id="btnRefreshPromptShortcutMenu">
-                        Refresh Menu
+                        刷新显示
                     </button>
                 </div>
                 <div>
                     <button class="btnSquare" id="btnLoadPromptShortcut">
-                        Load
+                        加载
                     </button>
                     <button class="btnSquare" id="btnSavePromptShortcut">
-                        Save
+                        保存
                     </button>
                 </div>
             </div>
@@ -1422,13 +1418,13 @@
                         value=""
                     ></sp-textfield>
                     <button class="btnSquare" id="btnSaveHordeSettings">
-                        Save
+                            保存
                     </button>
                 </div>
 
                 <sp-radio-group>
                     <sp-label id="BackendTypeLabel" slot="label"
-                        >Select Backend:</sp-label
+                        >(Select Backend) 选择后端:</sp-label
                     >
                     <!-- <sp-label slot="label">Select a Mode:</sp-label> -->
                     <sp-radio
@@ -1461,15 +1457,15 @@
                     </sp-picker>
 
                     <button class="btnSquare" id="btnRefreshModelsHorde">
-                        Refresh Models
+                        刷新模型
                     </button>
                     <!-- <sp-label slot="label"
               id="lVersionNumber">v0.0.0</sp-label> -->
                 </div>
                 <div>
-                    <sp-checkbox id="chUseNSFW">NSFW</sp-checkbox>
+                    <sp-checkbox id="chUseNSFW">(NSFW) R18+ </sp-checkbox>
                     <sp-checkbox id="chUseSharedLaion"
-                        >Share with LION</sp-checkbox
+                        >(Share with LION) 分享到 LION</sp-checkbox
                     >
                     <sp-slider
                         style="display: none"
@@ -1495,7 +1491,7 @@
                         value="20"
                         title="Resize scale of current selection size"
                     >
-                        <sp-label slot="label">Resize</sp-label>
+                        <sp-label slot="label">调整大小：</sp-label>
                         <sp-label
                             class="labelNumber"
                             slot="label"
@@ -1596,7 +1592,7 @@
                         <sp-label
                             style="width: 110px; display: inline-block"
                             slot="label"
-                            >Upscaler 2 visibility:
+                            >Upscaler 2 强度:
                         </sp-label>
                         <sp-label
                             style="display: inline-block"
@@ -1620,7 +1616,7 @@
                         <sp-label
                             style="width: 110px; display: inline-block"
                             slot="label"
-                            >GFPGAN visibility:
+                            >GFPGAN 强度:
                         </sp-label>
                         <sp-label
                             style="display: inline-block"
@@ -1644,7 +1640,7 @@
                         <sp-label
                             style="width: 110px; display: inline-block"
                             slot="label"
-                            >CodeFormer visibility:
+                            >CodeFormer 可见度:
                         </sp-label>
                         <sp-label
                             style="display: inline-block"
@@ -1668,7 +1664,7 @@
                         <sp-label
                             style="width: 110px; display: inline-block"
                             slot="label"
-                            >CodeFormer weight:
+                            >CodeFormer 权重:
                         </sp-label>
                         <sp-label
                             style="display: inline-block"
@@ -1777,7 +1773,7 @@
                             checked
                             value="settings"
                             data-tab-name="sp-settings-tab"
-                            >Settings</sp-radio
+                            >设置</sp-radio
                         >
                         <sp-radio
                             title=""
@@ -1785,7 +1781,7 @@
                             id="rbPresetsTab"
                             value="presets"
                             data-tab-name="sp-presets-tab"
-                            >Custom Presets</sp-radio
+                            >自定义预设</sp-radio
                         >
                     </sp-radio-group>
                 </div>
@@ -1803,31 +1799,31 @@
                         id="btnSdUrl"
                         style="margin-left: 5px"
                     >
-                        Submit
+                        提交
                     </button>
                     <button class="btnSquare" id="btnSaveSettingsTabs">
-                        Save
+                        保存
                     </button>
                 </div>
-                <sp-checkbox id="chUseSharpMask">use sharp mask</sp-checkbox>
+                <sp-checkbox id="chUseSharpMask">使用锐化遮罩</sp-checkbox>
                 <sp-checkbox checked id="chUseSmartObject"
-                    >Smart Object</sp-checkbox
+                    >智能对象</sp-checkbox
                 >
                 <sp-checkbox
                     checked
                     id="chLiveProgressImage"
                     class="chLiveProgressImageClass"
-                    >Live Progress Image</sp-checkbox
+                    >实时进度图像</sp-checkbox
                 >
 
                 <sp-checkbox checked id="chUseOriginalPrompt"
-                    >Restore Original Prompt</sp-checkbox
+                    >恢复原始提示</sp-checkbox
                 >
                 <sp-checkbox
                     checked
                     id="chUseImageCfgScaleSlider"
                     title="image cfg slider for pix2pix mode"
-                    >Image Cfg Scale Slider</sp-checkbox
+                    >图像配置缩放滑块</sp-checkbox
                 >
 
                 <sp-checkbox checked id="chUseSilentMode" style="display: none"
@@ -1835,14 +1831,14 @@
                 >
                 <sp-radio-group>
                     <sp-label slot="label"
-                        >Your PC Speed(optimization):</sp-label
+                        >对电脑性能(优化):</sp-label
                     >
                     <!-- <sp-label slot="label">Select a Mode:</sp-label> -->
                     <sp-radio title="" class="rbPCSpeed" value="slow"
-                        >Slow PC</sp-radio
+                        >低配 PC</sp-radio
                     >
                     <sp-radio title="" class="rbPCSpeed" value="fast" checked
-                        >Fast PC</sp-radio
+                        >高配 PC</sp-radio
                     >
 
                     <!-- <sp-tooltip id="tool_tip" open placement="top">use this when you want to fill empty areas of the canvas</sp-tooltip> -->
@@ -1850,17 +1846,17 @@
                 <!-- <a href="https://colab.research.google.com/drive/1nbcx_WOneRmYv9idBO33pN5CbxXrqZHu?usp=sharing" target="_blank">Don't have GPU, use Colab</a> -->
                 <sp-link
                     href="https://colab.research.google.com/drive/1nbcx_WOneRmYv9idBO33pN5CbxXrqZHu?usp=sharing"
-                    >Use Colab</sp-link
+                    >使用 Colab</sp-link
                 >
                 <div>
                     <sp-radio-group>
-                        <sp-label slot="label">Select Extension:</sp-label>
+                        <sp-label slot="label">选择扩展:</sp-label>
                         <!-- <sp-label slot="label">Select a Mode:</sp-label> -->
                         <sp-radio
                             title="use the proxy server, need to run 'start_server.bat' "
                             class="rbExtensionType"
                             value="proxy_server"
-                            >Proxy Server</sp-radio
+                            >代理 server</sp-radio
                         >
                         <sp-radio
                             title="use Automatic1111 Photoshop SD Extension, need to install the extension in Auto1111"
@@ -1873,7 +1869,7 @@
                             title="Use the Plugin Only No Additional Component"
                             class="rbExtensionType"
                             value="none"
-                            >None</sp-radio
+                            >无</sp-radio
                         >
                         <!-- <sp-tooltip id="tool_tip" open placement="top">use this when you want to fill empty areas of the canvas</sp-tooltip> -->
                     </sp-radio-group>
@@ -1887,11 +1883,11 @@
                         value=""
                     >
                         <sp-label slot="label"
-                            >Folder Path (read only):</sp-label
+                            >文件夹路径 (只读):</sp-label
                         >
                     </sp-textfield>
                     <button class="btnSquare" id="btnGetDocPath">
-                        Get Path
+                        获取路径
                     </button>
                 </div>
             </div>
@@ -1916,14 +1912,14 @@
                         class=""
                         id="btnRefreshModels"
                     >
-                        Refresh
+                        重载
                     </button>
                     <button
                         title="Update the plugin if you encounter bugs. Get the latest features"
                         class="btnSquare"
                         id="btnUpdate"
                     >
-                        Update
+                        更新
                     </button>
                     <!-- <sp-label slot="label"
           id="lVersionNumber">v0.0.0</sp-label> -->
@@ -2022,7 +2018,7 @@
                                 style="width: 120px"
                             >
                                 <sp-label slot="label" class="lProgressLabel"
-                                    >Progress...</sp-label
+                                    >进度...</sp-label
                                 >
                             </sp-progressbar>
                             <input
@@ -2329,27 +2325,27 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                             class="rbMode"
                             checked
                             value="txt2img"
-                            >txt2img</sp-radio
+                            >文生图</sp-radio
                         >
                         <sp-radio
                             title="use this mode to generate variation of an image"
                             class="rbMode"
                             value="img2img"
-                            >img2img</sp-radio
+                            >图生图</sp-radio
                         >
                         <sp-radio
                             title="use this mode to generate variation of a small area of an image, while keeping the rest of the image intact"
                             class="rbMode"
                             id="rbModeInpaint"
                             value="inpaint"
-                            >inpaint</sp-radio
+                            >修复</sp-radio
                         >
                         <sp-radio
                             title="use this mode to (1) fill any missing area of an image,(2) expand an image"
                             class="rbMode"
                             id="rbOutpaintMode"
                             value="outpaint"
-                            >outpaint</sp-radio
+                            >填充</sp-radio
                         >
                         <!-- <sp-tooltip id="tool_tip" open placement="top">use this when you want to fill empty areas of the canvas</sp-tooltip> -->
                     </sp-radio-group>
@@ -2393,7 +2389,7 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                                                 disabled
                                                 id="bSetInitImage"
                                             >
-                                                Image
+                                                图像
                                             </button>
                                         </div>
                                     </div>
@@ -2418,7 +2414,7 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                                                 disabled
                                                 id="bSetInitImageMask"
                                             >
-                                                Mask
+                                                蒙版
                                             </button>
                                         </div>
                                     </div>
@@ -2446,7 +2442,7 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                                         align-items: flex-start;
                                     "
                                 >
-                                    <sp-label>Batch Size:</sp-label
+                                    <sp-label>总批次数:</sp-label
                                     ><sp-textfield
                                         style="width: 100%"
                                         title="the number of images to generate at once.The larger the number more VRAM stable diffusion will use."
@@ -2465,7 +2461,7 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                                         align-items: flex-start;
                                     "
                                 >
-                                    <sp-label>Batch Count:</sp-label
+                                    <sp-label>单批数量:</sp-label
                                     ><sp-textfield
                                         style="width: 100%"
                                         title="the number of images to generate in queue. The larger the number the longer will take."
@@ -2483,7 +2479,7 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                                         align-items: flex-start;
                                     "
                                 >
-                                    <sp-label>Steps:</sp-label
+                                    <sp-label>迭代步数:</sp-label
                                     ><sp-textfield
                                         style="width: 100%"
                                         title="the higher the steps the longer it will take to generate an image"
@@ -2499,7 +2495,7 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                     <div id="selectionMode">
                         <div>
                             <sp-label id="rbSelectionModeLabel" slot="label"
-                                >Selection Mode:</sp-label
+                                >选择模式:</sp-label
                             >
                         </div>
 
@@ -2512,19 +2508,19 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                                     class="rbSelectionMode"
                                     checked
                                     value="ratio"
-                                    >ratio</sp-radio
+                                    >比例</sp-radio
                                 >
                                 <sp-radio
                                     title="use the selection area width and height to fill the width and height sliders"
                                     class="rbSelectionMode"
                                     value="precise"
-                                    >precise</sp-radio
+                                    >精准</sp-radio
                                 >
                                 <sp-radio
                                     title="fill the width and height sliders manually"
                                     class="rbSelectionMode"
                                     value="ignore"
-                                    >ignore</sp-radio
+                                    >忽略</sp-radio
                                 >
                             </sp-radio-group>
 
@@ -2553,7 +2549,7 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                                 value="8"
                                 data-old_value="512"
                             >
-                                <sp-label slot="label">Width:</sp-label>
+                                <sp-label slot="label">宽度:</sp-label>
                                 <sp-label
                                     class="labelNumber"
                                     slot="label"
@@ -2575,7 +2571,7 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                                 value="8"
                                 data-old_value="512"
                             >
-                                <sp-label slot="label">Height:</sp-label>
+                                <sp-label slot="label">高度:</sp-label>
                                 <sp-label
                                     class="labelNumber"
                                     slot="label"
@@ -2615,7 +2611,7 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                                 max="30"
                                 value="7"
                             >
-                                <sp-label slot="label">CFG Scale:</sp-label>
+                                <sp-label slot="label">提示词引导系数:</sp-label>
                                 <!-- <sp-label slot="label" id="lCfgScale">7</sp-label> -->
                             </sp-slider>
 
@@ -2627,7 +2623,7 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                                 value="70"
                             >
                                 <sp-label slot="label"
-                                    >Denoising Strength:</sp-label
+                                    >重绘幅度:</sp-label
                                 >
                                 <sp-label slot="label" id="lDenoisingStrength"
                                     >0.7</sp-label
@@ -2643,7 +2639,7 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                             value="15"
                             style="display: none"
                         >
-                            <sp-label slot="label">Image CFG Scale:</sp-label>
+                            <sp-label slot="label">图像缩放系数:</sp-label>
                             <sp-label slot="label" id="lImageCfgScale"
                                 >1.5</sp-label
                             >
@@ -2656,7 +2652,7 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                             max="64"
                             value="7"
                         >
-                            <sp-label slot="label">Mask Blur:</sp-label>
+                            <sp-label slot="label">蒙版模糊:</sp-label>
                             <!-- <sp-label slot="label" id="lDenoisingStrength">0.7</sp-label> -->
                         </sp-slider>
                         <sp-slider
@@ -2667,7 +2663,7 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                             value="40"
                             title="the larger the value the more the mask will expand, '0' means use precise masking, use in combination with the mask blur"
                         >
-                            <sp-label slot="label">Mask Expansion:</sp-label>
+                            <sp-label slot="label">蒙版扩张:</sp-label>
                             <!-- <sp-label slot="label" id="lDenoisingStrength">0.7</sp-label> -->
                         </sp-slider>
 
@@ -2681,8 +2677,8 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                                 title="0 will keep the composition; 1 will allow composition to change"
                             >
                                 <sp-label slot="label"
-                                    >Inpainting conditioning mask
-                                    strength:</sp-label
+                                    >修复蒙版权重:</s
+p-label
                                 >
                                 <sp-label
                                     slot="label"
@@ -2694,34 +2690,34 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
 
                         <div id="slInpainting_fill">
                             <sp-radio-group id="Inpainting_fill_group" class="">
-                                <sp-label slot="label">Mask Content:</sp-label>
+                                <sp-label slot="label">蒙版内容:</sp-label>
                                 <sp-radio
                                     class="rbMaskContent"
                                     checked
                                     value="0"
-                                    >fill</sp-radio
+                                    >填充</sp-radio
                                 >
                                 <sp-radio class="rbMaskContent" value="1"
-                                    >original</sp-radio
+                                    >原始</sp-radio
                                 >
                                 <sp-radio class="rbMaskContent" value="2"
-                                    >latent noise</sp-radio
+                                    >隐藏噪点</sp-radio
                                 >
                                 <sp-radio class="rbMaskContent" value="3"
-                                    >latent nothing</sp-radio
+                                    >隐藏缺失</sp-radio
                                 >
                             </sp-radio-group>
                         </div>
 
                         <div style="display: flex">
                             <sp-checkbox class="checkbox" id="chInpaintFullRes"
-                                >Inpaint at Full Res</sp-checkbox
+                                >在完整分辨率下修复</sp-checkbox
                             >
                             <sp-checkbox class="checkbox" id="chRestoreFaces"
-                                >Restore Faces</sp-checkbox
+                                >面部修复</sp-checkbox
                             >
                             <sp-checkbox class="checkbox" id="chHiResFixs"
-                                >Hi Res Fix</sp-checkbox
+                                >高分辨率修复</sp-checkbox
                             >
                         </div>
                         <div id="HiResDiv" style="display: none">
@@ -2861,7 +2857,7 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                     <div>
                         <!-- <sp-checkbox id="chHiResFixs">Hi Res Fix</sp-checkbox> -->
                         <div style="display: flex">
-                            <sp-label>Seed:</sp-label
+                            <sp-label>随机种子:</sp-label
                             ><sp-textfield
                                 id="tiSeed"
                                 placeholder="Seed"
@@ -2872,14 +2868,14 @@ l32 44 -47 62 c-67 90 -253 281 -358 368 -248 208 -538 351 -802 397 -90 16
                                 id="btnRandomSeed"
                                 style="margin-right: 3px; margin-left: 3px"
                             >
-                                Random
+                                随机种子
                             </button>
                             <button class="btnSquare" id="btnLastSeed">
-                                Last
+                                上一个种子
                             </button>
                         </div>
                         <button type="button" id="collapsible">
-                            Show Samplers
+                            采样方法
                         </button>
                         <sp-radio-group id="sampler_group" class="content">
                             <sp-label slot="label">Select Sampler:</sp-label>
