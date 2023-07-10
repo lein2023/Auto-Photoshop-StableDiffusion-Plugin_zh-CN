@@ -1,61 +1,64 @@
-
-
-# Auto-Photoshop-StableDiffusion-Plugin
-[![Become a Patron!](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/AbdullahAlfaraj)
-[![discord badge]][discord link]
-
-[discord badge]: https://flat.badgen.net/discord/members/3mVEtrddXJ
-[discord link]: https://discord.gg/3mVEtrddXJ
+非常抱歉,因为个人身体原因,这个分支可能暂时一段时间（也许很久)不会更新了。
+非常抱歉,由于个人健康原因,这个分支可能会有一段时间（也许很长一段时间)不更新。
 
 
 
-With Auto-Photoshop-StableDiffusion-Plugin, you can directly use the capabilities of Automatic1111 Stable Diffusion in Photoshop without switching between programs. This allows you to easily use Stable Diffusion AI in a familiar environment. You can edit your Stable Diffusion image with all your favorite tools and save it right in Photoshop.
+#自动用计算机修改（图片或照片）稳定扩散插件
+[![成为赞助人！](https://C5。帕特荣。com/external/logo/become _ a _ patron _ button。png)](https://www.patreon.com/AbdullahAlfaraj)
+[![不和谐徽章]][不和谐链接]
 
-# Table of Contents
-- [Auto-Photoshop-StableDiffusion-Plugin](#auto-photoshop-stablediffusion-plugin)
-- [Table of Contents](#table-of-contents)
-- [Demo:](#demo) 
-- [Support Us On Patreon](#support-us-on-patreon)
-- [How to Install](#how-to-install)
-	- [Method 1: One Click Installer](#method-1-one-click-installer)
-	- [Method 2: The Unzip Method](#method-2-the-unzip-method)
-	- [Method 3: The UXP Method (for Developers/Programmers Only)](#method-3-the-uxp-method-instruction-for-developers)
+[不和谐徽章]: https://flat.badgen.net/discord/members/3mVEtrddXJ
+[不和谐链接]: https://discord.gg/3mVEtrddXJ
 
-- [FAQ and Known Issues](#faq-and-known-issues)
-	- [What Photoshop version do I need to run the plugin?](#what-photoshop-version-do-i-need-to-run-the-plugin) 
-	- [Path Doesn't Exist](#path-doesnt-exist)
-	- [Plugin Load Failed](#plugin-load-failed)
-		- [No application are connected to the service](#no-application-are-connected-to-the-service)
-		- [Load command failed in App with ID PS and Version X.X.X](#load-command-failed-in-app-with-id-ps-and-version-xxx)
-	- [Exception in ASGI application / Expecting value: line 1 column 1](#exception-in-asgi-application--expecting-value-line-1-column-1)
-	- [No Generations and Plugin Server doesn't send messages. (Remote setup)](#no-generations-and-plugin-server-doesnt-send-messages-remote-setup)
+
+
+使用自动Photoshop稳定扩散插件，您可以直接使用用计算机修改（图片或照片）中的自动化1111稳定扩散功能,而无需在程序之间切换。这让你可以在熟悉的环境中轻松使用稳定扩散艾.你可以用所有你喜欢的工具编辑你的稳定扩散图像,并保存在用计算机修改（图片或照片）中。
+
+#目录
+- [自动用计算机修改（图片或照片）稳定扩散插件](#自动Photoshop-稳定扩散-插件)
+- [目录](#目录)
+- [演示：](#演示) 
+- [在订阅模式上支持我们](#支持我们在帕特里翁)
+- [如何安装](#如何安装)
+	- [方法1:一键安装](#方法-1-一键安装程序)
+	- [方法2:解压缩方法](#方法2-解压缩方法)
+	- [方法3:UXP方法（仅适用于开发人员/程序员)](#方法-3-the-uxp-面向开发人员的方法说明)
+
+- [常见问题和已知问题](#常见问题和已知问题)
+	- [运行插件需要什么用计算机修改（图片或照片）版本？](#运行插件需要什么用计算机修改（图片或照片）版本) 
+	- [路径不存在](#路径不存在)
+	- [插件加载失败](#插件加载失败)
+		- [没有应用程序连接到该服务](#无应用程序连接到服务)
+		- [身份证明为PS、版本为X.X.X的应用中的加载命令失败](# load-command-failed-in-app-id-PS-and-version-XXX)
+	- [阿斯吉应用程序中出现异常/预期值：第一行第一列](# asgi-应用程序-预期值-行-1-列-1中的异常)
+	- [没有代和插件服务器不发送消息。(远程设置)](#不生成插件服务器不发送消息远程设置)
 	
-- [No GPU Options](#no-gpu-options)
-	- [Stable Horde](#stable-horde)
-	- [Colab](#colab)
+- [没有国家政治保卫局。参见OGPU选项](#无-gpu选项)
+	- [稳定的部落](#马厩-部落)
+	- [科拉布](#colab)
 	
-# Support Us On Patreon:
-By supporting us on [Patreon](https://www.patreon.com/AbdullahAlfaraj), you’ll help us continue to develop and improve the Auto-Photoshop-StableDiffusion-Plugin, making it even easier for you to use Stable Diffusion AI in a familiar environment. As a supporter, you’ll have the opportunity to provide feedback and suggestions for future development. Plus, you’ll get early access to new features and tutorials, as well as exclusive art tutorials and tips from a professional artist. We’re passionate about making AI approachable to artists and with your help, we can continue to do just that.	
-# How To Install: 
-Use method 1 or 2 if you are an Artist
-use method 3 if you are a Developer/Programmer 
+#在订阅模式上支持我们：
+通过支持我们[订阅模式](https://www.patreon.com/AbdullahAlfaraj),你将帮助我们继续开发和改进自动Photoshop稳定扩散插件，让你更容易在熟悉的环境中使用稳定的扩散艾.作为支持者,你将有机会为未来的发展提供反馈和建议。此外,您将提前获得新功能和教程,以及专业艺术家的独家艺术教程和技巧。我们热衷于制作艾平易近人的艺术家,有了你的帮助,我们可以继续这样做。
+#如何安装：
+如果你是艺术家,使用方法一或2
+如果您是开发人员/程序员,请使用方法3
 
 
-# Method 1: One Click Installer
+#方法1:一键安装
 
-1) Download the [.ccx](https://github.com/AbdullahAlfaraj/Auto-Photoshop-StableDiffusion-Plugin/releases/latest) file
-2) run the ccx file . that's all.  you will be able to use all of stable diffusion modes (txt2img, img2img, inpainting and outpainting), check the [tutorials](https://github.com/AbdullahAlfaraj/Auto-Photoshop-StableDiffusion-Plugin/wiki) section to master the tool. 
+1)下载[。ccx](https://github。com/AbdullahAlfaraj/Auto-Photoshop-StableDiffusion-Plugin/releases/latest)文件
+2)运行ccx文件。仅此而已。你将能够使用所有的稳定扩散模式(txt2img，img2img，内涂和外涂),检查[教程](https://github。com/AbdullahAlfaraj/Auto-Photoshop-StableDiffusion-Plugin/wiki)一节来掌握该工具。
 
-![install_plugin_1](https://user-images.githubusercontent.com/7842232/217213943-3e2a588d-3ed8-4757-ba69-9846b55a1b36.gif)
+![安装插件一](https://user-images。githubusercontent。com/7842232/217213943-3e2a 588d-3ed 8-4757-ba69-9846 b 55 a1b 36。gif)
 
 
-3) (optional step) Install the Auto-Photoshop-SD Extension from Automatic1111. the extension will allow you to use the smart masking and image search features
- - a) Copy Auto-Photoshop plugin url
-![copy_githup_url_2](https://user-images.githubusercontent.com/7842232/217213998-367873ce-2c09-4c42-a5fa-0044415e3908.gif)
+3)(可选步骤)从自动化1111安装自动Photoshop-SD扩展。该扩展将允许您使用智能蒙版和图像搜索功能
+-答复制自动用计算机修改（图片或照片）插件全球资源定位器(Uniform Resource Locator)
+![copy_githup_url_2](https://user-images。githubusercontent。com/7842232/217213998-367873 ce-2c 09-4c 42-a5fa-0044415 e 3908。gif)
 
-- b) Paste the url in auto1111's extension tab and click install
+-b)将全球资源定位器(Uniform Resource Locator)粘贴到自动1111的扩展选项卡中,然后单击安装
 
-![install_extension_3](https://user-images.githubusercontent.com/7842232/217214062-4c2fef9e-8d49-46a0-aa3b-80c4975f8a70.gif)
+![安装扩展3](https://user-images。githubusercontent。com/7842232/217214062-4c 2 fef 9 e-8d 49-46 A0-aa3b-80c 4975 f8a 70。gif)
 
 - c) Make sure the Auto-Photoshop plugin is listed, then click "Apply and Restart UI"
 
